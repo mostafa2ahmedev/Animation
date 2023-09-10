@@ -6,7 +6,6 @@ import 'package:animation_project/ExplicitAnimation/PositionedDirectionalEx.dart
 import 'package:animation_project/ExplicitAnimation/PositionedTranstion.dart';
 import 'package:animation_project/ExplicitAnimation/RotaionTransition.dart';
 import 'package:animation_project/ExplicitAnimation/SizeTransistion.dart';
-import 'package:animation_project/ExplicitAnimation/TweenAnimationBuilder.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedAlign.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedContainer.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedCrossFaed.dart';
@@ -215,15 +214,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (context) => const PositionedDirectionalEx()));
               },
               child: const Text(' Positioned Directional Transition'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const TweenAnimationBuilderEx()));
-              },
-              child: const Text('Tween Animation Builder'),
             ),
             ElevatedButton(
               onPressed: () {

@@ -34,7 +34,9 @@ class _RotationTransitionExState extends State<RotationTransitionEx>
       ),
       body: Center(
         child: RotationTransition(
-          turns: _animation,
+          alignment: Alignment.center, // دي  بتحدد النقطه الي هيلف منها
+          turns: _controller,
+          // ممكن اديله الكنترولر علطول ويشتغل بس لو عايز العب ف قيم الانيميشن  والكيرف وكدا لازم عن طريق الانيميشن اوبجكت
           child: SizedBox(
             height: 100,
             width: 100,
@@ -43,7 +45,10 @@ class _RotationTransitionExState extends State<RotationTransitionEx>
         ),
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {
+        _controller.reset();
         _controller.forward();
+        // _controller.fling(velocity: 5);
+        // _controller.animateTo(1);
       }),
     );
   }
