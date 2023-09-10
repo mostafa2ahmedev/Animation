@@ -9,7 +9,6 @@ import 'package:animation_project/ImplicitAnimation/AnimatedPostined.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedPysicalModel.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedSwitcher.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedText.dart';
-import 'package:animation_project/ImplicitAnimation/TweenAnimationBuilder.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -153,15 +152,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (context) => const AnimatedListStateEx()));
               },
               child: const Text(' Animated List State'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const TweenAnimationBuilderEx()));
-              },
-              child: const Text(' TweenAnimationBuilderEx'),
             ),
           ],
         ),
