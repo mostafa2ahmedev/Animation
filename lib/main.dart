@@ -9,6 +9,14 @@ import 'package:animation_project/ImplicitAnimation/AnimatedPostined.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedPysicalModel.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedSwitcher.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedText.dart';
+import 'package:animation_project/PageAnimation/PageFadeTransition.dart';
+import 'package:animation_project/PageAnimation/PageRotationScaleTransition.dart';
+import 'package:animation_project/PageAnimation/PageRotationTransition.dart';
+import 'package:animation_project/PageAnimation/PageScaleTransition.dart';
+import 'package:animation_project/PageAnimation/PageSizeFadeTransition%20copy.dart';
+import 'package:animation_project/PageAnimation/PageSizeTransition.dart';
+import 'package:animation_project/PageAnimation/PageSlideTransition.dart';
+import 'package:animation_project/PageAnimation/pageTwo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -152,6 +160,55 @@ class _MyHomePageState extends State<MyHomePage> {
                         builder: (context) => const AnimatedListStateEx()));
               },
               child: const Text(' Animated List State'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageFadeTransition(page: const NewPage()));
+              },
+              child: const Text('Fade page Transition '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageScaleTransition(page: const NewPage()));
+              },
+              child: const Text('Scale page Transition '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageRotationTransition(page: const NewPage()));
+              },
+              child: const Text('Page Rotation Transition '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageSlideTransition(page: const NewPage()));
+              },
+              child: const Text('Page Slide Transition '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageSizeTransition(page: const NewPage()));
+              },
+              child: const Text('Page Size Transition '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageMixFadeTransition(page: const NewPage()));
+              },
+              child: const Text('Size Mix Fade Transition '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    PageRotationScalseTransition(page: const NewPage()));
+              },
+              child: const Text('Roatation Mix Scale Transition '),
             ),
           ],
         ),
