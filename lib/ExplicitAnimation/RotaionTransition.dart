@@ -10,14 +10,14 @@ class RotationTransitionEx extends StatefulWidget {
 class _RotationTransitionExState extends State<RotationTransitionEx>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation<double> _animation;
+  // late Animation<double> _animation;
 
   @override
   void initState() {
     super.initState();
     _controller = AnimationController(
         vsync: this, duration: const Duration(milliseconds: 1000));
-    _animation = Tween<double>(begin: 0, end: 5).animate(_controller);
+    // _animation = Tween<double>(begin: 0, end: 5).animate(_controller);
   }
 
   @override
