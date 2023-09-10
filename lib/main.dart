@@ -171,13 +171,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
-                    context, PageFadeTransition(page: const NewPage()));
-              },
-              child: const Text('Fade page Transition '),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
                     context, PageScaleTransition(page: const NewPage()));
               },
               child: const Text('Scale page Transition '),
