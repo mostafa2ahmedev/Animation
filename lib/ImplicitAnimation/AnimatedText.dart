@@ -22,7 +22,7 @@ class _AnimatedTextExState extends State<AnimatedTextEx> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animated Text'),
+        title: const Text('Animated Default Text'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

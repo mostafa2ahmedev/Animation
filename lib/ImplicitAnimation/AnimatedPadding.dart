@@ -11,7 +11,7 @@ class _AnimatedPaddingExState extends State<AnimatedPaddingEx> {
   List<String> chars = ['tom', 'jerry'];
   double padding = 10;
   bool isExpanded = false;
-
+//
   @override
   Widget build(BuildContext context) {
     return Scaffold(

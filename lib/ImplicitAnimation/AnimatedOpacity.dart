@@ -8,6 +8,7 @@ class AnimatedOpacityEx extends StatefulWidget {
 }
 
 class _AnimatedOpacityExState extends State<AnimatedOpacityEx> {
+  //
   bool visible = true;
   @override
   Widget build(BuildContext context) {

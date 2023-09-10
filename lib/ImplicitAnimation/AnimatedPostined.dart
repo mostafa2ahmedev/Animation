@@ -9,7 +9,7 @@ class AnimatedPositinedEx extends StatefulWidget {
 
 class _AnimatedPositinedExState extends State<AnimatedPositinedEx> {
   bool start = false;
-
+//
   @override
   Widget build(BuildContext context) {
     //بنستخدم الستاك ف الانيميشن لما يكون عندنا اكتر من لاير من الانيميشن ممكن يتتحطو فوق بعضهم

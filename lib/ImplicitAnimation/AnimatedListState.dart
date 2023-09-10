@@ -25,6 +25,7 @@ class _AnimatedListStateExState extends State<AnimatedListStateEx> {
     });
   }
 
+//
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -18,9 +18,7 @@ class _AnimatedSwitcherExState extends State<AnimatedSwitcherEx> {
       ),
       body: Center(
         child: AnimatedSwitcher(
-          switchInCurve: Curves.bounceOut,
-          switchOutCurve: Curves.bounceInOut,
-          duration: const Duration(seconds: 1),
+          duration: const Duration(milliseconds: 500),
           child: visible
               ? ElevatedButton(onPressed: () {}, child: const Text('Login'))
               : const CircularProgressIndicator(),

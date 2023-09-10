@@ -33,9 +33,10 @@ class _AnimatedContainerExState extends State<AnimatedContainerEx> {
             _changeValues();
           },
           child: AnimatedContainer(
+            curve: Curves.decelerate,
+            duration: const Duration(milliseconds: 500),
             height: height,
             width: width,
-            duration: const Duration(milliseconds: 500),
             decoration: BoxDecoration(
                 color: color,
                 borderRadius: BorderRadius.circular(borderR),

@@ -17,7 +17,7 @@ class _AnimatedPositinedDirectionalExState
     //بنستخدم الستاك ف الانيميشن لما يكون عندنا اكتر من لاير من الانيميشن ممكن يتتحطو فوق بعضهم
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animated PositinedDirectional'),
+        title: const Text('Animated Positined Directional'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

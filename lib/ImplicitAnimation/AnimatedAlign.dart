@@ -18,9 +18,12 @@ class _AnimatedAlignExState extends State<AnimatedAlignEx> {
       ),
       body: Stack(
         children: [
+          //السنتر بتاع السكرين هوا الي زيرو اكس زيرو واي
+          // بالنسبه للاكس اليمين موجب والشمال سالب عادي ولكن بالنسبه للواي معكوسه واعلي حاجه 1
           AnimatedAlign(
             alignment: getAligment(number),
             duration: const Duration(milliseconds: 500),
+            curve: Curves.bounceOut,
             child: Container(
               width: 100,
               height: 100,
@@ -31,6 +34,7 @@ class _AnimatedAlignExState extends State<AnimatedAlignEx> {
           AnimatedAlign(
             alignment: getAligment(number + 1),
             duration: const Duration(milliseconds: 500),
+            curve: Curves.bounceOut,
             child: Container(
               width: 100,
               height: 100,
@@ -52,7 +56,6 @@ class _AnimatedAlignExState extends State<AnimatedAlignEx> {
 
   Alignment getAligment(int jnumber) {
     switch (jnumber) {
-      //9 // >> //0
       case 1:
         return Alignment.topCenter;
       case 2:
