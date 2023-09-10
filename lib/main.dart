@@ -1,3 +1,11 @@
+import 'package:animation_project/ExplicitAnimation/AnimatedBuilder.dart';
+import 'package:animation_project/ExplicitAnimation/DefaultTextStyleTransition.dart';
+import 'package:animation_project/ExplicitAnimation/FadeTranstion.dart';
+import 'package:animation_project/ExplicitAnimation/IndexedStackTransition.dart';
+import 'package:animation_project/ExplicitAnimation/PositionedDirectionalEx.dart';
+import 'package:animation_project/ExplicitAnimation/PositionedTranstion.dart';
+import 'package:animation_project/ExplicitAnimation/RotaionTransition.dart';
+import 'package:animation_project/ExplicitAnimation/SizeTransistion.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedAlign.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedContainer.dart';
 import 'package:animation_project/ImplicitAnimation/AnimatedCrossFaed.dart';
@@ -209,6 +217,80 @@ class _MyHomePageState extends State<MyHomePage> {
                     PageRotationScalseTransition(page: const NewPage()));
               },
               child: const Text('Roatation Mix Scale Transition '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PositionedTransitionEx()));
+              },
+              child: const Text(' Positined Transition'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SizeTransitionEx()));
+              },
+              child: const Text(' Size Transition'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const RotationTransitionEx()));
+              },
+              child: const Text(' Rotation Transition'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const AnimatedBuilderEx()));
+              },
+              child: const Text(' Animated Builder'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const FadeTransitionEx()));
+              },
+              child: const Text(' Fade Transtion'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PositionedDirectionalEx()));
+              },
+              child: const Text(' Positioned Directional Transition'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const DefaultTextStyleTransitionEx()));
+              },
+              child: const Text('Default TextStyle Transition'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const IndexedStackTransitionEx()));
+              },
+              child: const Text('Indexed Stack Transition'),
             ),
           ],
         ),
