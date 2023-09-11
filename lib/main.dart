@@ -1,3 +1,6 @@
+import 'package:animation_project/Custom/CustomPaint.dart';
+import 'package:animation_project/Custom/LottieAnimation.dart';
+import 'package:animation_project/Custom/Rive.dart';
 import 'package:animation_project/ExplicitAnimation/AnimatedBuilder.dart';
 import 'package:animation_project/ExplicitAnimation/DefaultTextStyleTransition.dart';
 import 'package:animation_project/ExplicitAnimation/FadeTranstion.dart';
@@ -291,6 +294,27 @@ class _MyHomePageState extends State<MyHomePage> {
                             const IndexedStackTransitionEx()));
               },
               child: const Text('Indexed Stack Transition'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageFadeTransition(page: const CustomPainterEx()));
+              },
+              child: const Text('Custom Painter '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageFadeTransition(page: const LottieAnimation()));
+              },
+              child: const Text('Lottie Animation '),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context, PageFadeTransition(page: const RiveAnimationEx()));
+              },
+              child: const Text('Rive Animation '),
             ),
           ],
         ),
